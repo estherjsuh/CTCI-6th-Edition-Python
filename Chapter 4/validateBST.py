@@ -11,7 +11,7 @@ class BinaryTree:
         self.root = Node(root)
     
     def isBST(self):
-        arr = self.inorderTraversal(tree.root)
+        arr = self.inorderTraversal(self.root) 
         for i in range(len(arr)-1):
             return arr[i] < arr[i+1]
             

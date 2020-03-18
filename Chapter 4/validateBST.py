@@ -14,6 +14,8 @@ class BinaryTree:
         arr = self.inorderTraversal(self.root) 
         for i in range(len(arr)-1):
             return arr[i] < arr[i+1]
+        #this works too:
+        #return arr == sorted(arr)
             
     def inorderTraversal(self,root):
         arr = []
